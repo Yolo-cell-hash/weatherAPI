@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+<body class="bg-mb-blue">
+<div class="container mb-bg">
+<div class="card-deck">
+    <div class="card bg-light mb-3" >
+        <div class="card-header">City</div>
+        <div class="card-body">
+          <ul>
+            <li><p class="card-text" name="cityName">City Name: <%= cityName %>.</p></li>
+            <li><p class="card-text" name="latitude">Latitude: <%= latitude %>°.</p></li>
+            <li><p class="card-text" name="longitude">Longitude: <%= longitude %>°.</p></li>
+            <li><p class="card-text" name="sunrise">Sunrise: <%= sunrise %> UTC hours.</p></li>
+            <li><p class="card-text" name="sunset">Sunset: <%= sunset %> UTC hours.</p></li>
+          </ul>
+          </div>
+      </div>
+      <div class="card bg-light mb-3">
+        <div class="card-header">Weather</div>
+        <div class="card-body">
+          <ul>
+            <li><p class="card-text" name="temperature">Temperature: <%= temperature %> °C.</p></li>
+            <li><p class="card-text" name="humidity">Humidity: <%= humidity %>%.</p></li>
+            <li><p class="card-text" name="pressure">Pressure: <%= pressure %> hPa.</p></li>
+            <li><p class="card-text" name="rain">Rain: <%= rain %> mm.</p></li>
+            <li><p class="card-text" name="snow">Snow: <%= snow %> mm.</p></li>
+            <li><p class="card-text" name="precipitation">Precipitation: <%= precipitation %> mm.</p></li>
+          </ul>
+        </div>
+      </div>
+  </div> 
+ 
+
+  <div class="card-deck">
+    <div class="card bg-light mb-3">
+      <div class="card-header">Winds & Clouds</div>
+      <div class="card-body">
+        <ul>
+          <li><p class="card-text" name="windSpeed">Wind Speed: <%= windSpeed %> m/sec.</p></li>
+          <li><p class="card-text" name="windDegree">Wind Angle: <%= windDegree %>°.</p></li>
+          <li><p class="card-text" name="clouds">Clouds: <%= clouds %> %.</p></li>
+          <li><p class="card-text" name="visibility">Visibility: <%= visibility %> %.</p></li>
+        </ul>       
+       </div>
+    </div>
+    <div class="card bg-light mb-3 " >
+        <div class="card-header">Air Pollution Index</div>
+        <div class="card-body">
+          <ul>
+            <li><p class="card-text" name="co">Carbon Monoxide: <%= co %> μg/m3.</p></li>
+            <li><p class="card-text" name="no">Nitrogen Oxide: <%= no %> μg/m3.</p></li>
+            <li><p class="card-text" name="no2">Nitrogen Dioxide: <%= no2 %> μg/m3.</p></li>
+            <li><p class="card-text" name="so2">Sulphur Dioxide: <%= so2 %> μg/m3.</p></li>
+            <li><p class="card-text" name="o3">Ozone: <%= o3 %> μg/m3.</p></li>
+            <li><p class="card-text" name="nh3">Ammonia: <%= nh3 %> μg/m3.</p></li>
+            <li><p class="card-text" name="pm2_5">Fine Particulate Matter: <%= pm2_5 %> .</p></li>
+            <li><p class="card-text" name="pm10">Coarse Particulate Matter: <%= pm10 %> .</p></li>
+          </ul>         
+        </div>
+      </div>
+    </div> 
+</body> 
+<%- include('partials/footer') %>
